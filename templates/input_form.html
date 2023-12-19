@@ -1,0 +1,6 @@
+<!-- input_form.html -->
+<form method="post" action="{% url 'credit_risk_prediction' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Predict Credit Risk</button>
+</form>
